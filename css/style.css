@@ -1,0 +1,263 @@
+/* StreamTVInternet - Bootstrap custom styling */
+:root {
+  --brand-dark: #111827;
+  --brand-blue: #1463ff;
+  --brand-blue-dark: #0d47c9;
+  --text: #283445;
+  --muted: #687386;
+  --light: #f5f8fc;
+  --border: #e5eaf1;
+  --white: #ffffff;
+}
+
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  color: var(--text);
+  background: var(--white);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.75;
+}
+a { color: var(--brand-blue); text-decoration: none; }
+a:hover { color: var(--brand-blue-dark); }
+
+.announcement-bar {
+  background: var(--brand-dark);
+  color: #fff;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.site-header {
+  background: rgba(255,255,255,.98);
+  box-shadow: 0 2px 18px rgba(15, 23, 42, .08);
+  z-index: 1030;
+}
+.navbar { padding: 14px 0; }
+.brand-logo {
+  display: block;
+  width: 205px;
+  max-width: 100%;
+  height: auto;
+}
+.navbar-nav { gap: 5px; }
+.nav-link {
+  color: #202a39 !important;
+  font-weight: 600;
+  padding: 10px 12px !important;
+  border-radius: 8px;
+  transition: .2s ease;
+}
+.nav-link:hover,
+.nav-link.active {
+  color: var(--brand-blue) !important;
+  background: #f1f6ff;
+}
+.navbar-toggler {
+  border: 0;
+  font-size: 22px;
+  box-shadow: none !important;
+}
+
+.hero-section,
+.page-banner {
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+  color: #fff;
+}
+.hero-section {
+  min-height: 380px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 70px 0;
+}
+.hero-section h1,
+.page-banner h1 {
+  max-width: 950px;
+  margin: 0 auto;
+  font-weight: 800;
+  line-height: 1.2;
+}
+.hero-section h1 { font-size: clamp(34px, 5vw, 58px); }
+.page-banner { padding: 80px 0; text-align: center; }
+.page-banner h1 { font-size: clamp(34px, 5vw, 52px); }
+
+.section-padding { padding: 80px 0; }
+.section-padding h2 {
+  color: var(--brand-dark);
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 800;
+  margin-bottom: 0;
+}
+
+.service-card {
+  height: 100%;
+  padding: 34px 24px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(15,23,42,.06);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 35px rgba(15,23,42,.10);
+}
+.service-icon,
+.contact-icon {
+  width: 68px;
+  height: 68px;
+  margin: 0 auto 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #edf4ff;
+  color: var(--brand-blue);
+  font-size: 27px;
+}
+.service-card h3,
+.contact-card h3 { font-size: 22px; font-weight: 800; color: var(--brand-dark); }
+.service-card p { margin: 0; color: var(--muted); }
+
+.call-section { background: var(--light); }
+.call-card {
+  max-width: 820px;
+  margin: auto;
+  background: #fff;
+  padding: 48px 30px;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  box-shadow: 0 14px 40px rgba(15,23,42,.07);
+}
+.call-card h2 { margin-bottom: 22px; }
+.phone-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.phone-links a {
+  display: inline-block;
+  padding: 12px 20px;
+  background: var(--brand-blue);
+  color: #fff;
+  border-radius: 9px;
+  font-weight: 700;
+}
+.phone-links a:hover { background: var(--brand-blue-dark); color: #fff; }
+
+.custom-accordion {
+  max-width: 950px;
+  margin: auto;
+}
+.custom-accordion .accordion-item {
+  border: 1px solid var(--border);
+  border-radius: 12px !important;
+  overflow: hidden;
+  margin-bottom: 14px;
+}
+.custom-accordion .accordion-button {
+  font-weight: 700;
+  color: var(--brand-dark);
+  background: #fff;
+  box-shadow: none;
+  padding: 20px 22px;
+}
+.custom-accordion .accordion-button:not(.collapsed) {
+  color: var(--brand-blue);
+  background: #f7faff;
+}
+.custom-accordion .accordion-body {
+  color: var(--muted);
+  padding: 20px 22px 25px;
+}
+
+.content-card {
+  max-width: 1000px;
+  margin: auto;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: clamp(25px, 5vw, 55px);
+  box-shadow: 0 10px 35px rgba(15,23,42,.05);
+}
+.policy-content h2 {
+  font-size: 25px;
+  color: var(--brand-dark);
+  font-weight: 800;
+  margin: 32px 0 12px;
+}
+.policy-content p,
+.policy-content li { color: #4d596a; }
+.policy-content ul { padding-left: 24px; }
+.policy-content li { margin-bottom: 8px; }
+.policy-content strong { color: var(--brand-dark); }
+
+.disclaimer-card {
+  max-width: 1000px;
+  background: #fbfcfe;
+}
+.disclaimer-card h3 {
+  color: var(--brand-dark);
+  font-weight: 800;
+  font-size: 25px;
+}
+.disclaimer-card p { color: #4d596a; }
+.disclaimer-card hr {
+  border: 0;
+  border-top: 2px solid var(--border);
+  opacity: 1;
+  margin: 20px 0 25px;
+}
+
+.contact-card {
+  padding: 45px 25px;
+  text-align: center;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(15,23,42,.06);
+}
+.contact-card .contact-icon { margin-bottom: 20px; }
+.contact-card a { font-weight: 700; font-size: 20px; word-break: break-word; }
+
+.site-footer {
+  background: var(--brand-dark);
+  color: #dbe3ef;
+  padding: 55px 0 0;
+}
+.site-footer h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 18px;
+}
+.site-footer p { color: #b9c4d3; }
+.site-footer strong { color: #fff; }
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,.12);
+  margin-top: 35px;
+  padding: 20px 0;
+  color: #aeb9c9;
+  text-align: center;
+  font-size: 14px;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-nav { padding-top: 15px; }
+  .nav-link { padding: 11px 14px !important; }
+  .brand-logo { width: 185px; }
+}
+@media (max-width: 575.98px) {
+  .announcement-bar { font-size: 12px; }
+  .hero-section { min-height: 330px; padding: 55px 0; }
+  .section-padding { padding: 60px 0; }
+  .page-banner { padding: 60px 0; }
+  .call-card { padding: 35px 18px; }
+  .phone-links { flex-direction: column; }
+  .phone-links a { width: 100%; }
+}
