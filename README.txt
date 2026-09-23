@@ -1,4 +1,4 @@
-# StreamTVInternet - Bootstrap Static Website
+# Infinity support LLC - Bootstrap Static Website
 
 5 pages converted from the supplied website HTML into a clean Bootstrap + custom CSS static website.
 
